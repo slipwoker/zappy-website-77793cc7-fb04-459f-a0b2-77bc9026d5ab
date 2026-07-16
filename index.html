@@ -768,10 +768,10 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
 <a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
-    <svg style="display:block !important" class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
-    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display:none !important">
+    <svg class="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" style="display: none;">
       <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
     </svg>
   </button>
@@ -1272,22 +1272,22 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
   </div>
 </section>
 
-<section data-band-index="1" class="index-services-section" data-layout-spec="בית-services">
+<section data-band-index="1" class="index-services-section" data-layout-spec="בית-services" id="index-services-section">
   <div class="services-container">
     <!-- Section Header -->
     <div class="services-header">
-      <span class="services-label">השירותים שלנו</span>
-      <h2 class="services-title">הדרך שלך אל החופשה המושלמת מתחילה כאן</h2>
+      <p class="zappy-editable"><span class="services-label">השירותים שלנו</span>
+      </p><h2 class="services-title">הדרך שלך אל החופשה המושלמת מתחילה כאן</h2>
       <p class="services-subtitle">בין אם אתם מחפשים טיסה משתלמת, תכנון חופשה אישי או נסיעת עסקים מתואמת – אנחנו ב-D.B TRAVEL מלווים אתכם צעד אחר צעד, עם חיוך, סבלנות והרבה אהבה לטיולים.</p>
     </div>
 
     <!-- Services Grid -->
     <div class="services-grid">
       <!-- Card 1: Flight Booking -->
-      <article class="service-card">
-        <span class="service-number" aria-hidden="true">01</span>
-        <div class="service-card-image">
-          <img loading="lazy" decoding="async" data-placeholder="index-services-image-1" data-context="A warm view from inside an airplane window showing golden sunlight streaming in over soft white clouds, evoking calm and anticipation for a journey. Shot from passenger perspective, editorial style, warm tones, travel agency brand feel." width="600" height="400" src="/assets/site-image-index-services-image-1.webp" alt="אור זהוב מחלון מטוס מעל עננים רכים" fetchpriority="low">
+      <article class="service-card" data-grid-item-index="0">
+        <p class="zappy-editable"><span class="service-number" aria-hidden="true">01</span>
+        </p><div class="service-card-image">
+          <img loading="lazy" decoding="async" data-placeholder="index-services-image-1" data-context="A warm view from inside an airplane window showing golden sunlight streaming in over soft white clouds, evoking calm and anticipation for a journey. Shot from passenger perspective, editorial style, warm tones, travel agency brand feel." width="600" height="400" src="/assets/site-image-index-services-image-1.webp" alt="אור זהוב מחלון מטוס מעל עננים רכים" data-element-type="image" data-element-id="img-1784232897474-l1bno9xxu" style="" fetchpriority="low">
         </div>
         <div class="service-card-content">
           <h3 class="service-card-title">הזמנת טיסות בהתאמה אישית</h3>
@@ -1301,14 +1301,14 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       </article>
 
       <!-- Card 2: Vacation Planning -->
-      <article class="service-card">
-        <span class="service-number" aria-hidden="true">02</span>
-        <div class="service-card-image">
-          <img loading="lazy" decoding="async" data-placeholder="index-services-image-2" data-context="A serene boutique hotel pool area surrounded by terracotta planters and olive trees, with soft morning light filtering through a linen canopy. Warm sand tones, calm atmosphere, luxury yet understated travel aesthetic." width="600" height="400" src="/assets/site-image-index-services-image-2.webp" alt="בריכת מלון בוטיק שקטה עם אדניות טרקוטה ועצי זית" fetchpriority="low">
+      <article class="service-card" data-grid-item-index="1">
+        <p class="zappy-editable"><span class="service-number" aria-hidden="true">02</span>
+        </p><div class="service-card-image">
+          <img loading="lazy" decoding="async" data-placeholder="index-services-image-2" data-context="A serene boutique hotel pool area surrounded by terracotta planters and olive trees, with soft morning light filtering through a linen canopy. Warm sand tones, calm atmosphere, luxury yet understated travel aesthetic." width="600" height="400" src="/assets/site-image-index-services-image-2.webp" alt="בריכת מלון בוטיק שקטה עם אדניות טרקוטה ועצי זית" data-element-type="image" data-element-id="img-1784232897478-1up89fe2g" style="object-position: 50% 50%;" fetchpriority="low">
         </div>
         <div class="service-card-content">
           <h3 class="service-card-title">תכנון חופשות אישי</h3>
-          <p class="service-card-text">מכירים את זה שאתם גוללים שעות ומתבלבלים? אנחנו עושים את זה בשבילכם. נשב איתכם (בכוס קפה, אם בא לכם), נבין את הסגנון שלכם, ונתפור לכם מסלול חופשה שמרגיש כמו חלום – כולל מלונות מומלצים, אטרקציות וטיפים מקומיים.</p>
+          <p class="service-card-text" style="">מכירים את זה שאתם גוללים שעות ומתבלבלים? אנחנו עושים את זה בשבילכם. נשב איתכם יחד, נבין את הסגנון שלכם, ונתפור לכם מסלול חופשה שמרגיש כמו חלום – כולל מלונות מומלצים, אטרקציות וטיפים מקומיים.</p>
           <ul class="service-features">
             <li>התאמת יעדים ומלונות לפי אופי הטיול</li>
             <li>המלצות על מסעדות, חופים ואטרקציות</li>
@@ -1318,10 +1318,10 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
       </article>
 
       <!-- Card 3: Business & Premium Travel -->
-      <article class="service-card">
-        <span class="service-number" aria-hidden="true">03</span>
-        <div class="service-card-image">
-          <img loading="lazy" decoding="async" data-placeholder="index-services-image-3" data-context="A traveler sitting at a sunlit café table with a leather notebook, a ceramic coffee cup, and a printed travel itinerary spread out. Soft natural light, warm terracotta and cream palette, editorial lifestyle photography style." width="600" height="400" src="/assets/site-image-index-services-image-3.webp" alt="מטייל בבית קפה מואר עם מחברת ומסלול טיול מודפס" fetchpriority="low">
+      <article class="service-card" data-grid-item-index="2">
+        <p class="zappy-editable"><span class="service-number" aria-hidden="true">03</span>
+        </p><div class="service-card-image">
+          <img loading="lazy" decoding="async" data-placeholder="index-services-image-3" data-context="A traveler sitting at a sunlit café table with a leather notebook, a ceramic coffee cup, and a printed travel itinerary spread out. Soft natural light, warm terracotta and cream palette, editorial lifestyle photography style." width="600" height="400" src="/assets/site-image-index-services-image-3.webp" alt="מטייל בבית קפה מואר עם מחברת ומסלול טיול מודפס" data-element-type="image" data-element-id="img-1784232897481-f9z925vhd" style="" fetchpriority="low">
         </div>
         <div class="service-card-content">
           <h3 class="service-card-title">נסיעות עסקים ופרימיום</h3>
@@ -1338,8 +1338,8 @@ body:has(.zappy-announcement-bar) .navbar:not(.zappy-catalog-menu):not(.mobile-s
     <!-- Bottom CTA -->
     <div class="services-cta">
       <p class="services-cta-text">לא בטוחים איזה שירות מתאים לכם? דברו איתנו – אנחנו נכוון אתכם באהבה.</p>
-      <a href="/contact" class="btn-primary">צרו קשר עכשיו</a>
-    </div>
+      <p class="zappy-editable"><a href="/contact" class="btn-primary" data-element-type="button" data-element-id="btn-1784232897460-6vl5xsgp5" data-native-element="true">צרו קשר עכשיו</a>
+    </p></div>
 
     <!-- Decorative sand-dune wave SVG (bottom-right) -->
     <svg class="services-decor-wave" data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
